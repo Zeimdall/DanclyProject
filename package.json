@@ -6,8 +6,8 @@
   "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon server.js",
-    "web": "server.js"
+    "start": "node ./dancly-backend/server.js",
+    "web": "./dancly-backend/server.js"
   },
   "author": "",
   "license": "ISC",
