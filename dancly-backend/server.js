@@ -7,7 +7,7 @@ import jwt from 'jsonwebtoken'
 
 // App Config
 const app = express();
-const port = 8001; // process.env.PORT ||
+const port = process.env.PORT || 8001;
 
 // DB Config
 const connection_url = "mongodb+srv://admin:admin1@cluster0.v31sc.mongodb.net/Cluster0?retryWrites=true&w=majority";
@@ -211,4 +211,6 @@ app.post('/message', async (req, res) => {
 });
 
 /* Listener */
-app.listen(port, () => console.log('Listening on localhost: ' + port));
+app.listen(port, '0.0.0.0', () => {
+    console.log("Server is running.");
+});
