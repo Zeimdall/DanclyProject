@@ -5,12 +5,9 @@
   "main": "server.js",
   "type": "module",
   "scripts": {
-    "ng": "ng",
-    "start": "nodemon ./dancly-backend/server.js",
-    "build": "ng build",
-    "test": "ng test",
-    "lint": "ng lint",
-    "postinstall": "ng build --output-path angularapp  --aot --prod"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js",
+    "web": "server.js"
   },
   "author": "",
   "license": "ISC",
