@@ -7,7 +7,7 @@ import jwt from 'jsonwebtoken'
 
 // App Config
 const app = express();
-const port = process.env.PORT || 8001;
+const port = 8001; // process.env.PORT ||
 
 // DB Config
 const connection_url = "mongodb+srv://admin:admin1@cluster0.v31sc.mongodb.net/Cluster0?retryWrites=true&w=majority";
